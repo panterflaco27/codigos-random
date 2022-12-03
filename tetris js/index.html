@@ -1,0 +1,50 @@
+<html>
+
+  <head>
+    <title>Tetris Js</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+  </head>
+
+  <body>
+    <audio src="song/soudtrack.mp3" autoplay loop></audio>
+    <div class="title">Tetris Js :v osiosi</div>
+
+    <div id="background_tetris" class="background_tetris">
+      <div class="UI_pause">
+        <div class="title_menu">Pausa</div>
+        <br clear="all">
+        <button onclick="pausar(false)" class="btn">Continuar</button>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="positions right">
+        <canvas id="tetris" width="200" height="400"></canvas>
+      </div>
+      <div class="positions">
+        <div class="caja_lateral">
+          SIGUIENTE:
+          <canvas id="next" width="100" height="100"></canvas>
+        </div>
+        <div class="caja_lateral">
+          SCORE:
+          <div id="score"></div>
+        </div>
+        <div class="caja_lateral">
+          LINEAS:
+          <div id="lines"></div>
+        </div>
+        <div class="caja_lateral">
+          NIVEL:
+          <div id="level"></div>
+        </div>
+        <div class="boton">
+          <button onclick="pausar(true);" class="btn">pausa</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/tetris.js"></script>
+
+  </body>
+
+</html>

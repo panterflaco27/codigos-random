@@ -1,0 +1,101 @@
+@charset "UTF-8";
+body {
+  color: 	#4B0082;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+  background-image: url(../img/image.jpg);
+  background-size: cover;
+  background-position: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.title {
+  color: #FF1493;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.body {
+  display: flex;
+}
+
+.positions {
+  flex: 1 1 auto;
+}
+
+.right {
+  text-align: right;
+  margin-right: 50px;
+}
+
+canvas#tetris {
+  border: solid .2em #778899;
+  border-radius: 5px;
+  height: 85vh;
+}
+
+.caja_lateral {
+  border: solid .2em #778899;
+  margin-bottom: 20px;
+  max-width: 200px;
+  background-color: #20B2AA;
+}
+
+canvas#next {
+  width: 100px;
+}
+
+DIV.boton {
+  width: 100%;
+  max-width: 210;
+  text-align: left;
+}
+
+Button.btn {
+  width: 100%;
+  font-size: 1em;
+  background: #666;
+  border: solid ipx #333;
+  color: #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+DIV.background_tetris {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+}
+
+DIV.UI_pause {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -150px;
+  padding: 27px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+  background: #f3c5bd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 10px;
+}
+
+DIV.title_menu {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  color: #666;
+  text-shadow: 1px 1px white, -1px -1px black;
+}
